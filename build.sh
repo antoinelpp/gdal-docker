@@ -16,7 +16,8 @@ GDAL_VERSION=$(cat ${DIR}/gdal-checkout.txt)
 export DEBIAN_FRONTEND=noninteractive
 
 # Set the locale. Required for subversion to work on the repository.
-update-locale LANG="C.UTF-8"
+update-locale 
+LANG="C.UTF-8"
 dpkg-reconfigure locales
 . /etc/default/locale
 export LANG
